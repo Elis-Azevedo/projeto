@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicativo - CEPLD</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <header>
+        <h1>Aplicativo - CEPLD </h1>
+    </header>
+    <form class="form" action="" method="get" autocomplete="on">
+        <section>
+            
+                <label><input type="radio" name="rd-pessoa" value="pf" checked />1- PF</label>
+                <label><input type="radio" name="rd-pessoa" value="pj" />2- PJ</label>
+                <div id="tpessoa">
+                    <div id="pf"><input type="number" name="cpf" id="cpf"><label for="cpf">CPF</label>
+                    </div>
+                    <div id="pj"><input type="number" name="cnpj" id="cnpj"><label for="cnpj">CNPJ</label>
+                    </div>
+                </div>
+                <div>
+                    <p> Nome do Cliente:
+                        <input type="text" name="cliente" id="icliente" minlength="5" maxlength="30" required
+                            autocomplete="on">
+                    </p>
+                </div>
+                <div>
+                    <p> Produto <br>
+                        <input type="radio" name="produto" id="iconta"> <label for="iconta">ContaDepósito</label>
+                        <input type="radio" name="produto" id="icambio"> <label for="icambio">Câmbio</label>
+                        <input type="radio" name="produto" id="ihab"> <label for="ihab">Habitação</label>
+                        <input type="radio" name="produto" id="ipenhor"> <label for="ipenhor">Penhor</label>
+                        <input type="radio" name="produto" id="iacoes"> <label for="iacoes">Ações OnLine</label>
+                    </p>
+                </div>
+
+                <div>
+                    <p> Data:
+                        <input type="date" name="txtdata" id="data" required>
+                    </p>
+                </div>
+
+                <div>
+                    <p> Valor Movimentado:
+                        <input type="number" name="txtvalor" id="valor" required>
+                    </p>
+                </div>
+
+                <div>
+                    <p> <label for="imsg">Detalhes da Movimentação</label><br>
+                        <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+                    </p>
+                </div>
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+        </section>
+    </form>
+    <footer>
+        <p>&copy; ElisAzevedo 2023</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
