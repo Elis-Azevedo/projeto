@@ -33,3 +33,22 @@ function id(el) {
       });
     });
   });
+function mascara_cpf(){
+  var cpf = document.getElementById('cpf')
+  if(cpf.value.length == 3 || cpf.value.length == 7) {
+    cpf.value += "."
+  } else if(cpf.value.length == 11) {
+    cpf.value += "-"
+  }
+}
+function mascara_cnpj(){
+  var cnpj = document.getElementById('cnpj')
+  if(cnpj.value.length == 2 || cnpj.value.length == 6) {
+    cnpj.value += "."
+  } else if(cnpj.value.length == 10) {
+    cnpj.value += "/"
+  } else if(cnpj.value.length == 15) {
+    cnpj.value += "-"
+  }
+  }
+   

@@ -15,52 +15,53 @@
     </header>
     <form class="form" action="" method="get" autocomplete="on">
         <section>
-            
-                <label><input type="radio" name="rd-pessoa" value="pf" checked />1- PF</label>
-                <label><input type="radio" name="rd-pessoa" value="pj" />2- PJ</label>
-                <div id="tpessoa">
-                    <div id="pf"><input type="number" name="cpf" id="cpf" placeholder=" Digite o CPF"><label for="cpf"> CPF</label>
-                    </div>
-                    <div id="pj"><input type="number" name="cnpj" id="cnpj" placeholder=" Digite o CNPJ"><label for="cnpj"> CNPJ</label>
-                    </div>
+
+            <label><input type="radio" name="rd-pessoa" value="pf" checked />1- PF</label>
+            <label><input type="radio" name="rd-pessoa" value="pj" />2- PJ</label>
+            <div id="tpessoa">
+                <div id="pf"><input type="text" name="cpf" id="cpf" maxlength="14" onkeyup="mascara_cpf()" required placeholder=" Digite o CPF"><label for="cpf"> CPF</label>
                 </div>
-                <div>
-                    <p> Nome do Cliente:
-                        <input type="text" name="cliente" id="icliente" minlength="5" maxlength="30" required
-                            autocomplete="on">
-                    </p>
-                </div>
-                <div>
-                    <p> Produto <br>
-                        <input type="radio" name="produto" id="iconta"> <label for="iconta">ContaDepósito</label>
-                        <input type="radio" name="produto" id="icambio"> <label for="icambio">Câmbio</label>
-                        <input type="radio" name="produto" id="ihab"> <label for="ihab">Habitação</label>
-                        <input type="radio" name="produto" id="ipenhor"> <label for="ipenhor">Penhor</label>
-                        <input type="radio" name="produto" id="iacoes"> <label for="iacoes">Ações OnLine</label>
-                    </p>
+                <div id="pj"><input type="text" name="cnpj" id="cnpj" maxlength="18" onkeyup="mascara_cnpj()" required placeholder=" Digite o CNPJ"><label for="cnpj"> CNPJ</label>
                 </div>
 
-                <div>
-                    <p> Data:
-                        <input type="date" name="txtdata" id="data" required>
-                    </p>
-                </div>
-
-                <div>
-                    <p> Valor Movimentado:
-                        <input type="number" name="txtvalor" id="valor" required>
-                    </p>
-                </div>
-
-                <div>
-                    <p> <label for="imsg">Detalhes da Movimentação</label><br>
-                        <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
-                    </p>
-                </div>
-                <p>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Limpar">
+            </div>
+            <div>
+                <p> Nome do Cliente:
+                    <input type="text" name="cliente" id="icliente" minlength="5" maxlength="30" required
+                        autocomplete="on">
                 </p>
+            </div>
+            <div>
+                <p> Produto <br>
+                    <input type="radio" name="produto" id="iconta"> <label for="iconta">ContaDepósito</label>
+                    <input type="radio" name="produto" id="icambio"> <label for="icambio">Câmbio</label>
+                    <input type="radio" name="produto" id="ihab"> <label for="ihab">Habitação</label>
+                    <input type="radio" name="produto" id="ipenhor"> <label for="ipenhor">Penhor</label>
+                    <input type="radio" name="produto" id="iacoes"> <label for="iacoes">Ações OnLine</label>
+                </p>
+            </div>
+
+            <div>
+                <p> Data:
+                    <input type="date" name="txtdata" id="data" required>
+                </p>
+            </div>
+
+            <div>
+                <p> Valor Movimentado:
+                    <input type="" name="txtvalor" id="valor" required>
+                </p>
+            </div>
+
+            <div>
+                <p> <label for="imsg">Detalhes da Movimentação</label><br>
+                    <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+                </p>
+            </div>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
         </section>
     </form>
     <footer>
@@ -68,4 +69,5 @@
     </footer>
     <script src="script.js"></script>
 </body>
+
 </html>
