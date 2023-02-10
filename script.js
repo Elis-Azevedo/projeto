@@ -33,6 +33,7 @@ function id(el) {
       });
     });
   });
+
 function mascara_cpf(){
   var cpf = document.getElementById('cpf')
   if(cpf.value.length == 3 || cpf.value.length == 7) {
@@ -41,6 +42,7 @@ function mascara_cpf(){
     cpf.value += "-"
   }
 }
+
 function mascara_cnpj(){
   var cnpj = document.getElementById('cnpj')
   if(cnpj.value.length == 2 || cnpj.value.length == 6) {
@@ -51,4 +53,4 @@ function mascara_cnpj(){
     cnpj.value += "-"
   }
   }
-   
+
